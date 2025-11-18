@@ -5,7 +5,7 @@ function TaskList({ tasks, onDone }) {
   if (tasks.length === 0) {
     return (
       <div className="text-zinc-500 dark:text-zinc-400">
-        No tasks added yet.
+        No pending tasks.
       </div>
     );
   }

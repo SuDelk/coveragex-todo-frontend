@@ -23,8 +23,8 @@ function AddTaskForm({ onAdd }) {
     >
       {/* Title */}
       <div className="flex flex-col gap-1">
-        <label classname="font-medium text-zinc-800 dark:text-zinc-300">
-          Task Title
+        <label htmlFor="Title" className="font-medium text-zinc-800 dark:text-zinc-300">
+          Title
         </label>
         <input
           type="text"
@@ -42,7 +42,7 @@ function AddTaskForm({ onAdd }) {
 
       {/* Description */}
       <div className="flex flex-col gap-1">
-        <label className="font-medium text-zinc-800 dark:text-zinc-300">
+        <label htmlFor="Description" className="font-medium text-zinc-800 dark:text-zinc-300">
           Description (optional)
         </label>
         <textarea
@@ -65,7 +65,7 @@ function AddTaskForm({ onAdd }) {
         className="w-full py-2 rounded-lg
                    bg-blue-600 dark:bg-blue-500
                    hover:bg-blue-700 dark:hover:bg-blue-600
-                   text-white font-medium transition"
+                   text-white font-medium transition hover:cursor-pointer"
       >
         Add Task
       </button>
